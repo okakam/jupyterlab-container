@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  tensorflow:
+    build: ./tensorflow
+    container_name: tensorflow
+    restart: always
+    ports:
+      - 8888:8888
+    volumes:
+      - /home/non/jupyter/notebooks:/tf/notebooks
